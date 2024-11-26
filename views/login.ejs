@@ -1,0 +1,32 @@
+
+  
+
+<div id="container">
+    <h1 class="mt-5 mb-4">LogIn</h1>
+    <%if(errorMessages){%>
+
+        <div class="alert alert-danger" role="alert">
+          <%=errorMessages%>
+        </div>
+    
+       <%}%>
+    <form action="/user/signin" method="POST">
+   
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    <p>New account ?<a href="/user/register" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Register </a></p>
+
+        
+    </form>
+</div>
+    
+
+</body>
+</html>
