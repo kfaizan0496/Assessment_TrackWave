@@ -4,6 +4,7 @@
   "description": "How to use Authentication And Authorization",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mohd Faizan,kfaizan0496@gmail.com,9540655528",
