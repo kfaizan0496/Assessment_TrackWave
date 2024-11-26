@@ -18,7 +18,14 @@ app.use(session({
     secret:'SecretKey',
     resave:false,
     saveUninitialized:true,
-    cookie:{secure:false}
+  
+    proxy: true, 
+    name: 'MyCoolWebAppCookieName', // This needs to be unique per-host.
+    cookie: {
+      secure: true, 
+      httpOnly: false,
+      sameSite: 'none'
+    }
 }))
 
 app.use('/', homeRouter);
